@@ -1,8 +1,8 @@
 # Если хотите пояснить код, можно добавить комментарий с помощью символа #
-name: Ilona Maskova # Ваше имя
-job: QA Engineer
-level: junior
-email: ilona@hexlet.io
+name: Nikita Cheprasov # Ваше имя
+job: Specialist
+level: intern
+email: dormibro@gmail.com
 description: |
   Этот текст — описание в свободной форме. Здесь можно рассказать пару интересных фактов про себя.
 
@@ -10,7 +10,6 @@ description: |
 skills: # Список навыков в виде списка, можете написать сюда что-то свое
   - Функциональное тестирование
   - Написание багрепортов
-  - Linux
   - Слепая печать
   - Английский язык A1
   - Деловое общение
