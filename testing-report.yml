@@ -1,62 +1,60 @@
 ---
 - summary: |
     Проверка регистрации пользователя
-status: fail
+  status: fail
 
 - summary: |
      Проверка входа пользователя с существующими логином и паролем
-status: fail
+  status: fail
 
 - summary: |
      Проверка входа пользователя с несуществующими логином и паролем
-status: fail
+  status: fail
 
 - summary: |
       Проверка валидации форм регистрации 
-status: fail
+  status: fail
 
 - summary: |
       Проверка валидации форм входа 
-status: fail
+  status: fail
 
 - summary: |
       Проверка функции смены языка с английского на русский
-status: pass
+  status: pass
 
 - summary: |
        Проверка функции добавления товара в корзину
-status: pass
+  status: pass
 
 - summary: |
       Проверка функции удаления товара из корзины
-status: pass
+  status: pass
 
 - summary: |
       Проверка функции оформления заказа 
-status: fail
+  status: fail
 
 - summary: |
       Проверка корректной оплаты заказа
-status: fail
+  status: fail
 
 - summary: |
       Проверка поиска товара по ключевому слову
-status: pass
+  status: pass
 
 - summary: |
       Проверка поиска товара по категории
-status: pass
+  status: pass
 
 - summary: |
       Проверка возможности просматривать подробную информацию о товаре
-status: pass
+  status: pass
 
 - summary: |
       Проверка Кроссбраузерности интернет-магазина
-status: pass
+  status: pass
 
 - summary: |
       Проверка адаптивности интернет-магазина
-status: fail
-  
-  
+  status: fail
