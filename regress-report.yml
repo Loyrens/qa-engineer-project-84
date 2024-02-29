@@ -16,7 +16,7 @@ test-cases:
       Проверка валидации форм регистрации 
    status: fail
 
- -  summary: |
+ - summary: |
       Проверка валидации форм входа 
    status: fail
 
