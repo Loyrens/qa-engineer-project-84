@@ -2,7 +2,7 @@
 test-cases:
  - summary: |
      Проверка функции смены языка на сайте
-  status: pass
+   status: pass
 
 - summary: |
      Проверка функции добавления товара в корзину
