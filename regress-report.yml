@@ -1,8 +1,8 @@
 ---
 test-cases:
- - summary: |
+- summary: |
      Проверка функции смены языка на сайте
-   status: pass
+  status: pass
 
 - summary: |
      Проверка функции добавления товара в корзину
@@ -57,75 +57,75 @@ test-cases:
   status: pass   
 
 bugreports:
- - summary: |
+- summary: |
       Ошибка отображения карточки товара через поиск с ключевым словом
-   environment: |
+  environment: |
       Google Chrome Версия 122.0.6261.69 (Официальная сборка), (64 бит)
       ОС Windows 10 22H2
-   steps-to-reproduce: |
+  steps-to-reproduce: |
       1. Зайти на интренет-магазин: https://hexlet-products-store.vercel.app/
       2. В поиске через ключевое слово вводим "Iphone 9"
-   expected-result: |
+  expected-result: |
       Должна появится карточка товара без искажений
-   actual-result: |
+  actual-result: |
       Выводится карточка товара без адаптации под расширение экрана монитора
       Ошибка изображена на скриншоте screenbug.png
 
- - summary: |
+- summary: |
       Ошибка фильтрации товаров по цене
-   environment: |
+  environment: |
       Google Chrome Версия 122.0.6261.69 (Официальная сборка), (64 бит)
       ОС Windows 10 22H2
-   steps-to-reproduce: |
+  steps-to-reproduce: |
       1. Зайти на интренет-магазин: https://hexlet-products-store.vercel.app/
       2. В форме цены вводим диапозон значений от 0 до -450
-   expected-result: |
+  expected-result: |
       Должна появится пустая страница без карточек товаров
-   actual-result: |
+  actual-result: |
       Выводятся все имеющиеся карточки товаров, вне зависимости от цены
       Ошибка изображена на скриншоте price_bug1.png
       
- - summary: |
+- summary: |
       Ошибка отображения товара по производителям при выключенной функции "В наличии"
-   environment: |
+  environment: |
       Google Chrome Версия 122.0.6261.69 (Официальная сборка), (64 бит)
       ОС Windows 10 22H2
-   steps-to-reproduce: |
+  steps-to-reproduce: |
       1. Зайти на интренет-магазин: https://hexlet-products-store.vercel.app/
       2. Выключить функцию "В наличии"
       3. Выбрать несколько производитетелй 
-   expected-result: |
+  expected-result: |
       Должны появится карточки товаров выбранных производителей, без учета, есть ли они сейчас в наличии или нет
-   actual-result: |
+  actual-result: |
       Выдается вообще весь товар, который есть
       Ошибка изображена на скриншоте instockbug.png
 
- - summary: |
+- summary: |
       Ошибка отображения товара по производителям
-   environment: |
+  environment: |
       Google Chrome Версия 122.0.6261.69 (Официальная сборка), (64 бит)
       ОС Windows 10 22H2
-   steps-to-reproduce: |
+  steps-to-reproduce: |
       1. Зайти на интренет-магазин: https://hexlet-products-store.vercel.app/
       2. Выбрать производителя "Apple"
       3. Выбрать категорию "groceries"
-   expected-result: |
+  expected-result: |
       Сайт не должен выдать вообще карточек товаров, так как у нас не заведены товары от Apple в категории бакалеи
-   actual-result: |
+  actual-result: |
       Выдается вообще весь товар, который есть, вне зависимости от производителя и категории товара
       Ошибка изображена на скриншоте categorybug.png
 
- - summary: |
+- summary: |
       Ошибка отображения товара по диапозону цен
-   environment: |
+  environment: |
       Google Chrome Версия 122.0.6261.69 (Официальная сборка), (64 бит)
       ОС Windows 10 22H2
-   steps-to-reproduce: |
+  steps-to-reproduce: |
       1. Зайти на интренет-магазин: https://hexlet-products-store.vercel.app/ 
       2. Выбрать категорию "groceries"
       3. Выбрать диапозон цен от 20$ до 40$
-   expected-result: |
+  expected-result: |
       Сайт выдает карточку товара "cereals muesli fruit nuts" с ценой 38.27$ по скидке
-   actual-result: |
+  actual-result: |
       Выдается вообще весь товар, который есть, вне зависимости от производителя и категории товара, и цены
       Ошибка изображена на скриншоте pricebug2.png
